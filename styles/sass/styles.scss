@@ -1,0 +1,18 @@
+@import "setup";
+@import "variables";
+@import "fonts";
+@import "blog";
+@import "contact";
+@import "footer";
+@import "home";
+@import "mixins";
+@import "navigation";
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+html {
+    font-size: 62.5%;
+}

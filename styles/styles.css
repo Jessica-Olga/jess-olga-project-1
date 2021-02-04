@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -249,47 +251,32 @@ html {
   overflow: hidden;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+h1 {
+  color: black;
+  font-size: 7.9rem;
+  font-family: "IM Fell English", serif;
 }
 
-@media screen and (max-width: 1023px) {
-  nav ul {
-    background: blue;
-  }
+h2 {
+  font-size: 4.5rem;
+  font-family: "IM Fell English", serif;
+  line-height: 9.98rem;
 }
 
-nav li {
-  display: inline-block;
+h3 {
+  font-size: 4rem;
+  font-family: "IM Fell English", serif;
+  line-height: 5.8rem;
+  letter-spacing: 0.13rem;
 }
 
-nav a {
-  text-decoration: none;
+h4 {
+  font-size: 2.5rem;
+  font-family: "IM Fell English", serif;
+  line-height: 5.8rem;
+  letter-spacing: 0.8px;
 }
 
-nav a:hover {
-  color: red;
-}
-
-body {
+html {
   font-size: 62.5%;
-}
-
-@media screen and (max-width: 1023px) {
-  body {
-    background: blue;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  body {
-    background: red;
-  }
-}
-
-nav {
-  position: relative;
-  top: 50px;
 }
