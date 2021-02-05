@@ -252,15 +252,16 @@ html {
 }
 
 h1 {
-  color: black;
   font-size: 7.9rem;
   font-family: "IM Fell English", serif;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 4.5rem;
   font-family: "IM Fell English", serif;
   line-height: 9.98rem;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -268,6 +269,7 @@ h3 {
   font-family: "IM Fell English", serif;
   line-height: 5.8rem;
   letter-spacing: 0.13rem;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -275,8 +277,117 @@ h4 {
   font-family: "IM Fell English", serif;
   line-height: 5.8rem;
   letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 2.8rem;
+  letter-spacing: 1px;
+}
+
+button {
+  font-family: "IM Fell English", serif;
+  font-size: 2.24rem;
+  line-height: 4.16rem;
+  text-transform: uppercase;
+}
+
+nav label[for="toggle"] {
+  display: none;
+}
+
+nav input[type="checkbox"] {
+  display: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 3%;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus-within {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #FDD908;
+          text-decoration-color: #FDD908;
+  text-decoration-thickness: 3px;
+  -webkit-text-decoration-skip: 2px;
+          text-decoration-skip: 2px;
+  text-underline-offset: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  nav label[for="toggle"] {
+    display: inline-block;
+    font-size: 35px;
+    color: #ffffff;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: 10;
+  }
+  nav ul {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 10px;
+    margin-left: 40px;
+    position: absolute;
+    top: -30%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    margin: 0;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+  nav input[type="checkbox"]:checked + ul {
+    top: 0;
+  }
+  nav label[for="toggle"]:hover {
+    color: #FDD908;
+  }
 }
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  background-color: #0D457F;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid red;
 }

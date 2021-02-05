@@ -15,4 +15,16 @@
 
 html {
     font-size: 62.5%;
+    
 }
+body{
+    background-color: $darkBlue;
+}
+
+.wrapper{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
