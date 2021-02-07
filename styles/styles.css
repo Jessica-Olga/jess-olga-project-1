@@ -550,7 +550,7 @@ button {
 }
 
 .home .section4 .wrapper .image {
-  width: 20%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -565,6 +565,7 @@ button {
 .home .section4 .wrapper .image img {
   -webkit-box-shadow: -15px 15px #fdd908;
           box-shadow: -15px 15px #fdd908;
+  width: 70%;
 }
 
 .home .section4 .wrapper .text {
