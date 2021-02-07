@@ -180,7 +180,7 @@
             box-shadow: -15px 15px $yellow;
         //     align-self: center;
         //     justify-content: center;
-        // }
+         }
 
     }
 
@@ -194,3 +194,22 @@
 
 
 }
+
+.home .section5  {
+
+    height: 70vh;
+    background-color: $darkBlue;
+    padding: 5% auto;
+    ul {
+        padding: 7% 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+        
+
+        li {
+            width: calc((100% / 3) - 15px); 
+        }
+    }
+} 

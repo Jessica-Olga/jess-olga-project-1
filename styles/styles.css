@@ -565,12 +565,6 @@ button {
 .home .section4 .wrapper .image img {
   -webkit-box-shadow: -15px 15px #fdd908;
           box-shadow: -15px 15px #fdd908;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .home .section4 .wrapper .text {
@@ -579,6 +573,30 @@ button {
 
 .home .section4 .wrapper .text h2, .home .section4 .wrapper .text p {
   margin: 0 auto;
+}
+
+.home .section5 {
+  height: 70vh;
+  background-color: #0D457F;
+  padding: 5% auto;
+}
+
+.home .section5 ul {
+  padding: 7% 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .section5 ul li {
+  width: calc((100% / 3) - 15px);
 }
 
 nav label[for="toggle"] {
