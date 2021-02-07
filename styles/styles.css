@@ -370,7 +370,7 @@ button {
 
 .home .section2 {
   background-color: #0D457F;
-  padding: 5% auto;
+  margin: 5% 0 10% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,11 +381,16 @@ button {
 }
 
 .home .section2 .locations {
-  width: 40%;
+  width: 45%;
+  text-align: right;
 }
 
 .home .section2 .programs {
-  width: 40%;
+  width: 45%;
+}
+
+.home .section2 .img {
+  background-color: #fdd908;
 }
 
 nav label[for="toggle"] {
@@ -501,7 +506,6 @@ img {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 button {

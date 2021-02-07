@@ -71,18 +71,23 @@
 
 .home .section2 {
     background-color: $darkBlue;
-    padding: 5% auto;
+    margin: 5% 0 10% 0;
     display: flex;
     justify-content: space-between;
     height: 80vh;
     
 
         .locations {
-            width: 40%;
+            width: 45%;
+            text-align: right;
            
         }
 
         .programs{
-            width: 40%;
+            width: 45%;
         }
+}
+
+.home .section2 .img {
+    background-color:$yellow ;
 }
