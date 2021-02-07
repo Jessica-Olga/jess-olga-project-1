@@ -1,7 +1,15 @@
+
+.home h2,
+.home h3,
+.home button {
+    color: $darkBlue;
+}
+
 .home header {
     height: 80vh;
-    background-image: url(../../assets/home-header.jpg);
-    background-size:cover;
+    background-image: url(../assets/home-header.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
    
 }
 .home .headerContent{
@@ -32,7 +40,7 @@
 .home .section1 .parent{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10%;
+    margin-top: 15%;
     padding-bottom: 10%;
 
         ul {
@@ -72,33 +80,39 @@
     justify-content: space-between;
    
     height: 90vh;
+
+    h3, p{
+        color: $white;
+    }
     
 
         .locations {
-            width: 45%;
+            width: 40%;
             text-align: right;
             position: relative;
             border: 1px solid red;
+            display: flex;
+            align-items: flex-end;
 
             img {
-                box-shadow: 10px 10px $yellow;
+                box-shadow: 20px 20px $yellow;
                 position: absolute;
                 top: -50px;
                 left: 0;
             }
 
             .locationsText  {
-                position: absolute;
-                bottom: 0;
+                // position: absolute;
+                // bottom: 0;
+                // left: 10px;
                 margin-bottom: 5%;
                 margin-left: 5vw;
-                left: 10px;
              
                 
 
                 h3, p {
                     margin: 0 auto 20px auto;
-                    color: $white;
+        
                 }
 
                 p {
@@ -109,26 +123,36 @@
         }
 
         .programs{
-            width: 45%;
+            width: 40%;
             text-align: left;
             position: relative;
+            display: flex;
+            align-items:flex-start;
 
-            img {
-                box-shadow: 10px 10px solid $yellow;
-                position: absolute;
+            .programsText {
+                margin-right: 5vw;
             }
 
+            img {
+                box-shadow: -20px 20px $yellow;
+                position: absolute;
+                bottom: -35px;
+                right: 0;
+            }
+
+            p {
+                text-align: justify;
+            }
+
+            button {
+                margin-bottom: 5%;
+            }
            
         }
 }
 
 .home .section3 {
     text-align: center;
-
-    h2 {
-        color: $darkBlue;
-    }
-
     p{
         width: 70%;
         margin:0 auto 30px auto;
@@ -141,13 +165,32 @@
 
 .home .section4 .wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    margin: 5% auto;
+    
 
     .image {
-        width: 30%;
-    }
-}
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-.home button {
-    color: $darkBlue;
+        img {
+            box-shadow: -15px 15px $yellow;
+        //     align-self: center;
+        //     justify-content: center;
+        // }
+
+    }
+
+    .text {
+        width: 60%;
+
+        h2, p{
+            margin: 0 auto;
+        }
+    }
+
+
 }

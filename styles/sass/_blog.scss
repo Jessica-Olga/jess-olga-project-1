@@ -1,6 +1,7 @@
 .blog header{
     height:30vh ;
-    background-image: url(../../assets/blog-header.jpg);
+    background-image: url(../assets/blog-header.jpg);
+    background-size: cover;
         h1{
             color: $white;
         }

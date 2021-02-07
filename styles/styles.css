@@ -296,7 +296,8 @@ button {
 
 .blog header {
   height: 30vh;
-  background-image: url(../../assets/blog-header.jpg);
+  background-image: url(../assets/blog-header.jpg);
+  background-size: cover;
 }
 
 .blog header h1 {
@@ -365,10 +366,17 @@ button {
   width: 60%;
 }
 
+.home h2,
+.home h3,
+.home button {
+  color: #0D457F;
+}
+
 .home header {
   height: 80vh;
-  background-image: url(../../assets/home-header.jpg);
-  background-size: cover;
+  background-image: url(../assets/home-header.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .home .headerContent {
@@ -405,7 +413,7 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 10%;
+  margin-top: 15%;
   padding-bottom: 10%;
 }
 
@@ -447,32 +455,38 @@ button {
   height: 90vh;
 }
 
+.home .section2 h3, .home .section2 p {
+  color: #ffffff;
+}
+
 .home .section2 .locations {
-  width: 45%;
+  width: 40%;
   text-align: right;
   position: relative;
   border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .home .section2 .locations img {
-  -webkit-box-shadow: 10px 10px #fdd908;
-          box-shadow: 10px 10px #fdd908;
+  -webkit-box-shadow: 20px 20px #fdd908;
+          box-shadow: 20px 20px #fdd908;
   position: absolute;
   top: -50px;
   left: 0;
 }
 
 .home .section2 .locations .locationsText {
-  position: absolute;
-  bottom: 0;
   margin-bottom: 5%;
   margin-left: 5vw;
-  left: 10px;
 }
 
 .home .section2 .locations .locationsText h3, .home .section2 .locations .locationsText p {
   margin: 0 auto 20px auto;
-  color: #ffffff;
 }
 
 .home .section2 .locations .locationsText p {
@@ -480,23 +494,39 @@ button {
 }
 
 .home .section2 .programs {
-  width: 45%;
+  width: 40%;
   text-align: left;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.home .section2 .programs .programsText {
+  margin-right: 5vw;
 }
 
 .home .section2 .programs img {
-  -webkit-box-shadow: 10px 10px solid #fdd908;
-          box-shadow: 10px 10px solid #fdd908;
+  -webkit-box-shadow: -20px 20px #fdd908;
+          box-shadow: -20px 20px #fdd908;
   position: absolute;
+  bottom: -35px;
+  right: 0;
+}
+
+.home .section2 .programs p {
+  text-align: justify;
+}
+
+.home .section2 .programs button {
+  margin-bottom: 5%;
 }
 
 .home .section3 {
   text-align: center;
-}
-
-.home .section3 h2 {
-  color: #0D457F;
 }
 
 .home .section3 p {
@@ -512,18 +542,43 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 70vh;
+  margin: 5% auto;
 }
 
 .home .section4 .wrapper .image {
-  width: 30%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.home button {
-  color: #0D457F;
+.home .section4 .wrapper .image img {
+  -webkit-box-shadow: -15px 15px #fdd908;
+          box-shadow: -15px 15px #fdd908;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .section4 .wrapper .text {
+  width: 60%;
+}
+
+.home .section4 .wrapper .text h2, .home .section4 .wrapper .text p {
+  margin: 0 auto;
 }
 
 nav label[for="toggle"] {
@@ -639,6 +694,7 @@ img {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
 button {
