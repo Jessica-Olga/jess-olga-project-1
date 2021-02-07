@@ -54,16 +54,12 @@
     height: 80px;
     align-items: center;
 
-    i{
-        width: 10%;
-        
-        
-
-    }
+   
 
     h2 {
         width: 90%;
-        margin: 0;
+        margin: 0 0 0 10px;
+
         
     }
                     
@@ -74,20 +70,84 @@
     margin: 5% 0 10% 0;
     display: flex;
     justify-content: space-between;
-    height: 80vh;
+   
+    height: 90vh;
     
 
         .locations {
             width: 45%;
             text-align: right;
-           
+            position: relative;
+            border: 1px solid red;
+
+            img {
+                box-shadow: 10px 10px $yellow;
+                position: absolute;
+                top: -50px;
+                left: 0;
+            }
+
+            .locationsText  {
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 5%;
+                margin-left: 5vw;
+                left: 10px;
+             
+                
+
+                h3, p {
+                    margin: 0 auto 20px auto;
+                    color: $white;
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+            
         }
 
         .programs{
             width: 45%;
+            text-align: left;
+            position: relative;
+
+            img {
+                box-shadow: 10px 10px solid $yellow;
+                position: absolute;
+            }
+
+           
         }
 }
 
-.home .section2 .img {
-    background-color:$yellow ;
+.home .section3 {
+    text-align: center;
+
+    h2 {
+        color: $darkBlue;
+    }
+
+    p{
+        width: 70%;
+        margin:0 auto 30px auto;
+    }
+
+    button {
+        margin-bottom: 10%;
+    }
+}
+
+.home .section4 .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .image {
+        width: 30%;
+    }
+}
+
+.home button {
+    color: $darkBlue;
 }

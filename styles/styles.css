@@ -294,6 +294,77 @@ button {
   text-transform: uppercase;
 }
 
+.blog header {
+  height: 30vh;
+  background-image: url(../../assets/blog-header.jpg);
+}
+
+.blog header h1 {
+  color: #ffffff;
+}
+
+.blog section {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog section .sideBar {
+  width: 40%;
+}
+
+.blog section .sideText {
+  background: #0D457F;
+  width: 70%;
+  height: auto;
+  position: relative;
+  margin-left: 5vw;
+  padding-top: 380px;
+}
+
+.blog section .sideText h4 {
+  color: #fdd908;
+  margin: 60px 0 0 25px;
+}
+
+.blog section .sideText p {
+  color: #ffffff;
+  margin: 10px 0 0 25px;
+}
+
+.blog section .sideText ul {
+  padding-bottom: 30px;
+}
+
+.blog section .sideText li {
+  list-style-type: disc;
+  list-style-position: outside;
+  color: #ffffff;
+  font-size: 1.5em;
+  text-indent: 16px;
+}
+
+.blog section .sideText li p {
+  margin: 5px;
+}
+
+.blog .sideText img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: -5vw;
+  top: -20px;
+  z-index: 10;
+  border: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog section .blogMain {
+  width: 60%;
+}
+
 .home header {
   height: 80vh;
   background-image: url(../../assets/home-header.jpg);
@@ -359,13 +430,9 @@ button {
           align-items: center;
 }
 
-.home .section1 .icon i {
-  width: 10%;
-}
-
 .home .section1 .icon h2 {
   width: 90%;
-  margin: 0;
+  margin: 0 0 0 10px;
 }
 
 .home .section2 {
@@ -377,20 +444,86 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80vh;
+  height: 90vh;
 }
 
 .home .section2 .locations {
   width: 45%;
   text-align: right;
+  position: relative;
+  border: 1px solid red;
+}
+
+.home .section2 .locations img {
+  -webkit-box-shadow: 10px 10px #fdd908;
+          box-shadow: 10px 10px #fdd908;
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
+.home .section2 .locations .locationsText {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5%;
+  margin-left: 5vw;
+  left: 10px;
+}
+
+.home .section2 .locations .locationsText h3, .home .section2 .locations .locationsText p {
+  margin: 0 auto 20px auto;
+  color: #ffffff;
+}
+
+.home .section2 .locations .locationsText p {
+  text-align: justify;
 }
 
 .home .section2 .programs {
   width: 45%;
+  text-align: left;
+  position: relative;
 }
 
-.home .section2 .img {
-  background-color: #fdd908;
+.home .section2 .programs img {
+  -webkit-box-shadow: 10px 10px solid #fdd908;
+          box-shadow: 10px 10px solid #fdd908;
+  position: absolute;
+}
+
+.home .section3 {
+  text-align: center;
+}
+
+.home .section3 h2 {
+  color: #0D457F;
+}
+
+.home .section3 p {
+  width: 70%;
+  margin: 0 auto 30px auto;
+}
+
+.home .section3 button {
+  margin-bottom: 10%;
+}
+
+.home .section4 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home .section4 .wrapper .image {
+  width: 30%;
+}
+
+.home button {
+  color: #0D457F;
 }
 
 nav label[for="toggle"] {
