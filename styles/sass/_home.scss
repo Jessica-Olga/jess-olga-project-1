@@ -115,7 +115,7 @@
                 box-shadow: 20px 20px $yellow;
                 position: absolute;
                 top: -50px;
-                left: 0;
+                left: -70px;
             }
 
             .locationsText  {
@@ -144,7 +144,7 @@
                 box-shadow: -20px 20px $yellow;
                 position: absolute;
                 bottom: -35px;
-                right: 0;
+                right: -70px;
             }
 
         
@@ -179,7 +179,7 @@
 
         img {
             box-shadow: -15px 15px $yellow;
-            width: 70%;
+            width: 80%;
         //     align-self: center;
         //     justify-content: center;
          }
@@ -188,9 +188,23 @@
 
     .text {
         width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
 
-        h2, p{
-            margin: 0 auto;
+        h2{
+            margin: 0;
+
+        }
+
+        p {
+            margin: 0 auto 20px;
+        }
+
+        button {
+            width: 32%;
+            
         }
     }
 
