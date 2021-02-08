@@ -295,16 +295,24 @@ button {
 }
 
 .blog header {
-  height: 30vh;
+  height: 60vh;
   background-image: url(../assets/blog-header.jpg);
   background-size: cover;
+  background-position-y: -40px;
+  background-position-x: 0;
+  background-repeat: no-repeat;
 }
 
 .blog header h1 {
+  margin-top: 150px;
   color: #ffffff;
 }
 
 .blog section {
+  margin-top: 50px;
+}
+
+.blog section .mainParent {
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,21 +320,21 @@ button {
 }
 
 .blog section .sideBar {
-  width: 40%;
+  width: 30%;
+  position: relative;
 }
 
 .blog section .sideText {
   background: #0D457F;
-  width: 70%;
+  width: 100%;
   height: auto;
-  position: relative;
-  margin-left: 5vw;
-  padding-top: 380px;
+  padding-top: 340px;
+  padding-right: 5px;
 }
 
 .blog section .sideText h4 {
   color: #fdd908;
-  margin: 60px 0 0 25px;
+  margin: 25px 0 0 25px;
 }
 
 .blog section .sideText p {
@@ -343,27 +351,248 @@ button {
   list-style-position: outside;
   color: #ffffff;
   font-size: 1.5em;
-  text-indent: 16px;
+  text-indent: 5px;
 }
 
 .blog section .sideText li p {
   margin: 5px;
 }
 
-.blog .sideText img {
-  width: 400px;
-  height: 400px;
+.blog .sideText .smallImg {
+  border: 1px solid green;
+  width: 380px;
+  height: 380px;
   position: absolute;
   left: -5vw;
-  top: -20px;
+  top: -32px;
   z-index: 10;
+}
+
+.blog .sideText .smallImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: none;
+}
+
+.blog .sideText .text {
+  padding-right: 10px;
+}
+
+.blog section .blogMain {
+  width: calc(70% - 5%);
+  margin-left: 5%;
+}
+
+.blog section .blogMain article {
+  position: relative;
+  height: auto;
+}
+
+.blog section .blogMain article .articleImg {
+  position: absolute;
+  top: -200px;
+  right: -5vw;
+  border: 1px solid red;
+  width: 797px;
+  height: 480px;
+  -webkit-box-shadow: -15px 15px #fdd908;
+          box-shadow: -15px 15px #fdd908;
+}
+
+.blog section .blogMain article .articleImg img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.blog section .blogMain {
-  width: 60%;
+.blog section .blogMain article .text {
+  padding: 240px 20px 60px 60px;
+  border-left: 5px solid #fdd908;
+  border-bottom: 5px solid #fdd908;
+}
+
+.blog section .blogMain article .text h2, .blog section .blogMain article .text p {
+  color: #0D457F;
+}
+
+.blog section .blogMain article .text h2 {
+  margin-bottom: -30px;
+  margin-top: 70px;
+}
+
+.blog section .blogMain .comments {
+  height: auto;
+  border: 1px solid pink;
+  padding: 0 0 60px 60px;
+}
+
+.blog section .blogMain .comments .first,
+.blog section .blogMain .comments .second {
+  border: 1px solid royalblue;
+  width: 80%;
+  margin-left: 120px;
+  position: relative;
+}
+
+.blog section .blogMain .comments p, .blog section .blogMain .comments h2 {
+  color: #0D457F;
+}
+
+.blog section .blogMain .comments h2 {
+  margin-bottom: 0;
+}
+
+.blog section .blogMain .comments .bold {
+  margin: 0;
+  font-weight: bold;
+}
+
+.blog section .blogMain .comments p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.blog section .blogMain .comments .first::before {
+  content: url(../assets/comment-1.jpg);
+}
+
+.blog section .blogMain .comments .second::before {
+  content: url(../assets/comment-2.jpg);
+}
+
+.blog section .blogMain .comments .first::before,
+.blog section .blogMain .comments .second::before {
+  position: absolute;
+  left: -120px;
+}
+
+.blog .form {
+  border: 1px solid teal;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 50px;
+}
+
+.blog .form form {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.blog .form .firstRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.blog .form .firstRow .nameDiv,
+.blog .form .firstRow .mailDiv {
+  width: 45%;
+  border-bottom: 2px solid #fdd908;
+}
+
+.blog .form .firstRow input[type=text],
+.blog .form .firstRow input[type=email] {
+  width: 100%;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #0D457F;
+  background-color: #EAFEFC;
+  padding: 0 0 15px 15px;
+}
+
+.blog .form .firstRow input::-webkit-input-placeholder,
+.blog .form .firstRow input::-webkit-input-placeholder {
+  color: #0D457F;
+  opacity: 1;
+}
+
+.blog .form .firstRow input:-ms-input-placeholder,
+.blog .form .firstRow input:-ms-input-placeholder {
+  color: #0D457F;
+  opacity: 1;
+}
+
+.blog .form .firstRow input::-ms-input-placeholder,
+.blog .form .firstRow input::-ms-input-placeholder {
+  color: #0D457F;
+  opacity: 1;
+}
+
+.blog .form .firstRow input::placeholder,
+.blog .form .firstRow input::placeholder {
+  color: #0D457F;
+  opacity: 1;
+}
+
+.blog form textarea {
+  border: 2px solid #fdd908;
+  width: 100%;
+  height: 200px;
+  background-color: #EAFEFC;
+  text-align: left;
+  padding: 15px 15px;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #0D457F;
+  resize: none;
+}
+
+.blog textarea::-webkit-input-placeholder {
+  color: #0D457F;
+  opacity: 1;
+}
+
+.blog textarea:-ms-input-placeholder {
+  color: #0D457F;
+  opacity: 1;
+}
+
+.blog textarea::-ms-input-placeholder {
+  color: #0D457F;
+  opacity: 1;
+}
+
+.blog textarea::placeholder {
+  color: #0D457F;
+  opacity: 1;
+}
+
+.blog button {
+  width: 100%;
+  background-color: #0D457F;
+  color: #fdd908;
+  padding: 0 15px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.blog button:hover,
+.blog button:focus {
+  color: #0D457F;
+  background-color: rgba(253, 217, 8, 0.6);
+  border: 2px solid #fdd908;
 }
 
 .home h2,
@@ -446,20 +675,33 @@ button {
 .home .section2 {
   background-color: #0D457F;
   margin: 5% 0 10% 0;
+  height: 80vh;
+}
+
+.home .section2 h3, .home .section2 p {
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.home .section2 p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.home .section2 button {
+  margin-bottom: 5%;
+}
+
+.home .section2 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 90vh;
 }
 
-.home .section2 h3, .home .section2 p {
-  color: #ffffff;
-}
-
-.home .section2 .locations {
+.home .section2 .wrapper .locations {
   width: 40%;
   text-align: right;
   position: relative;
@@ -470,9 +712,10 @@ button {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  height: 80vh;
 }
 
-.home .section2 .locations img {
+.home .section2 .wrapper .locations img {
   -webkit-box-shadow: 20px 20px #fdd908;
           box-shadow: 20px 20px #fdd908;
   position: absolute;
@@ -480,20 +723,13 @@ button {
   left: 0;
 }
 
-.home .section2 .locations .locationsText {
-  margin-bottom: 5%;
-  margin-left: 5vw;
+.home .section2 .wrapper .locations .locationsText {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
 }
 
-.home .section2 .locations .locationsText h3, .home .section2 .locations .locationsText p {
-  margin: 0 auto 20px auto;
-}
-
-.home .section2 .locations .locationsText p {
-  text-align: justify;
-}
-
-.home .section2 .programs {
+.home .section2 .wrapper .programs {
   width: 40%;
   text-align: left;
   position: relative;
@@ -505,24 +741,12 @@ button {
           align-items: flex-start;
 }
 
-.home .section2 .programs .programsText {
-  margin-right: 5vw;
-}
-
-.home .section2 .programs img {
+.home .section2 .wrapper .programs img {
   -webkit-box-shadow: -20px 20px #fdd908;
           box-shadow: -20px 20px #fdd908;
   position: absolute;
   bottom: -35px;
   right: 0;
-}
-
-.home .section2 .programs p {
-  text-align: justify;
-}
-
-.home .section2 .programs button {
-  margin-bottom: 5%;
 }
 
 .home .section3 {
