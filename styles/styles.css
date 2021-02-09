@@ -297,7 +297,7 @@ button {
 
 .blog header {
   height: 60vh;
-  background-image: url(../assets/blog-header.jpg);
+  background-image: url(../assets/blog-side-image-cropped.jpg);
   background-size: cover;
   background-position-y: -40px;
   background-position-x: 0;
@@ -676,7 +676,7 @@ button {
 .home .section2 {
   background-color: #0D457F;
   margin: 5% 0 10% 0;
-  height: 80vh;
+  height: auto;
 }
 
 .home .section2 h3, .home .section2 p {
@@ -716,18 +716,20 @@ button {
   height: 80vh;
 }
 
+.home .section2 .wrapper .locations .locationsImage {
+  width: 123%;
+  position: absolute;
+  top: -50px;
+  left: -130px;
+}
+
 .home .section2 .wrapper .locations img {
   -webkit-box-shadow: 20px 20px #fdd908;
           box-shadow: 20px 20px #fdd908;
-  position: absolute;
-  top: -50px;
-  left: -70px;
 }
 
 .home .section2 .wrapper .locations .locationsText {
-  position: absolute;
-  bottom: 0;
-  left: 10px;
+  margin-bottom: 5%;
 }
 
 .home .section2 .wrapper .programs {
@@ -742,12 +744,20 @@ button {
           align-items: flex-start;
 }
 
-.home .section2 .wrapper .programs img {
-  -webkit-box-shadow: -20px 20px #fdd908;
-          box-shadow: -20px 20px #fdd908;
+.home .section2 .wrapper .programs .programsText {
+  margin-top: 90px;
+}
+
+.home .section2 .wrapper .programs .programsImage {
+  width: 123%;
   position: absolute;
   bottom: -35px;
-  right: -70px;
+  right: -125px;
+}
+
+.home .section2 .wrapper .programs .programsImage img {
+  -webkit-box-shadow: -20px 20px #fdd908;
+          box-shadow: -20px 20px #fdd908;
 }
 
 .home .section3 {
@@ -964,7 +974,7 @@ img {
 button {
   background-color: #fdd908;
   border: 2px solid transparent;
-  padding: 10px 15px;
+  padding: 6px 15px;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
 }

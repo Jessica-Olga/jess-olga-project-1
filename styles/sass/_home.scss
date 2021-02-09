@@ -76,7 +76,7 @@
 .home .section2 {
     background-color: $darkBlue;
     margin: 5% 0 10% 0;
-    height: 80vh;
+    height: auto;
 
     h3, p{
         color: $white;
@@ -111,18 +111,23 @@
             align-items: flex-end;
             height: 80vh;
 
-            img {
-                box-shadow: 20px 20px $yellow;
+            .locationsImage {
+                width: 123%;
                 position: absolute;
                 top: -50px;
-                left: -70px;
+                left: -130px;
+                }
+
+                img {
+                    box-shadow: 20px 20px $yellow;
+                    
             }
 
             .locationsText  {
-                position: absolute;
-                bottom: 0;
-                left: 10px;
-                // margin-bottom: 5%;
+                // position: absolute;
+                // bottom: 0;
+                // left: 10px;
+                margin-bottom: 5%;
                 // margin-left: 5vw;
              
             }
@@ -136,15 +141,20 @@
             display: flex;
             align-items:flex-start;
 
-            // .programsText {
-            //     margin-right: 5vw;
-            // }
+            .programsText {
+                margin-top: 90px;
+            }
 
-            img {
-                box-shadow: -20px 20px $yellow;
+            .programsImage {
+                width:123%;
                 position: absolute;
                 bottom: -35px;
-                right: -70px;
+                right: -125px;
+
+                img {
+                    box-shadow: -20px 20px $yellow;
+                    
+                }
             }
 
         
