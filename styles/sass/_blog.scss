@@ -279,7 +279,7 @@
         height: 30vh;
         background-size:auto;        
         h1{
-            margin-top: 75px;
+            margin-top: 75px;            
         }
     }
     .blog .sideBar .smallImg{
@@ -290,7 +290,9 @@
     }
     .blog .mainParent .blogMain .text{
         h2{
-            margin-top:15px ;
+            margin-top:15px;
+            line-height:6.9rem ;
+            margin-bottom: 0;
         }
     }
     .blog .mainParent .blogMain .comments{
@@ -326,8 +328,3 @@
         padding: 0 30px 20px 30px;
     } 
 }
-
-
-
-
-

@@ -16,10 +16,12 @@ html {
     font-size: 62.5%;
     
 }
-body{
-    background-color: $lightBlue;
+
+body{    
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $lightBlue;    
 }
 
 .parent {
