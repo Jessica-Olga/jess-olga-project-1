@@ -6,9 +6,9 @@
 }
 
 .home header {
-    height: 80vh;
+    height: 60vh;
     background-image: url(../assets/home-header.jpg);
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
    
 }
@@ -33,11 +33,11 @@
         width: 50%;
         position: absolute;
         top:150px;
-        right: 0;
+        right: -133px;
     }
 } 
 
-.home .section1 .parent{
+.home .section1 .iconParent{
     display: flex;
     flex-wrap: wrap;
     margin-top: 15%;
@@ -46,7 +46,6 @@
         ul {
             width: 50%;
             margin: 0;
-            border: 1px solid black;
             padding: 0;
 
             li {
@@ -193,8 +192,6 @@
         img {
             box-shadow: -15px 15px $yellow;
             width: 80%;
-        //     align-self: center;
-        //     justify-content: center;
          }
 
     }
@@ -226,19 +223,23 @@
 
 .home .section5  {
 
-    height: 70vh;
+    height: 50vh;
     background-color: $darkBlue;
     padding: 5% auto;
-    ul {
-        padding: 7% 0 0 0;
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-        align-items: center;
-        
 
-        li {
-            width: calc((100% / 3) - 15px); 
+    .wrapper {
+        padding: 7% auto;
+        ul {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            align-items: center;
+            
+    
+            li {
+                width: calc((100% / 3) - 15px); 
+            }
         }
     }
 } 
@@ -248,13 +249,23 @@
     
     .home .header {
         height: 70vh;
+
+    
+
         .home .headerContent .headerImage{
             width: 40%;
+            top: 50px;
         }
     }
 
-    .home .section1 .parent {
-        margin-top: 0;
+    .home .section1 .iconParent  .icon h2{
+    font-size:3.5rem;
+    line-height: 4rem;
+    
+    }
+
+     .home .section1 .iconParent {
+            margin-top: 10%;
     }
 
     .home .section2 .wrapper .locations .locationsImage,
@@ -263,21 +274,54 @@
     }
 }
 
+@media (max-width: 1080px) {
+    .home header {
+        height: 60vh;
+    }
+
+    .home .headerContent h1 {
+        width: 70%;
+    }
+
+    .home .headerContent .headerImage {
+        width: 35%;
+        top: 0px;
+        right: -56px;
+    }
+
+    .home .section1 .iconParent {
+            margin-top: 50px;
+    }
+
+    .home .section1 .iconParent  .icon h2{
+        font-size:3.5rem;
+        line-height: 4rem;
+        
+    }
+
+}
+
+
 @media (max-width:800px) {
     .home header {
-        height: 50vh;
+        height: 40vh;
     }
     
     .home .headerContent h1 {
         width: 100%;
-        margin-top: 0;
+        margin: 0 auto ;
+        padding-top: 50px;
+        text-align: center;
     }
 
     .home .headerContent .headerImage {
         display: none;
     }
-    
-    .home .section1 .parent {
+    .home .section1 {
+        margin-top: 50px;
+    }
+
+    .home .section1 .iconParent {
         flex-direction: column;
         align-items: center;
         height: auto;
@@ -288,6 +332,7 @@
 
             .icon {
             flex-direction: column;
+            margin-top: 30px;
             }
 
             p {
@@ -295,4 +340,10 @@
             }
         }     
     }
+
+.home .section5{
+    height: auto;
+    padding-bottom: 50px;
+}
+
 }
