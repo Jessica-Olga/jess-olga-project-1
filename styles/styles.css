@@ -1541,6 +1541,10 @@ button {
     width: 80%;
     margin-bottom: 15px;
     padding: 0;
+    display: none;
+  }
+  .home .section5 .wrapper ul li:last-child {
+    display: inline-block;
   }
 }
 

@@ -209,8 +209,13 @@
                 width:80%;
                 margin-bottom: 15px;
                 padding: 0;
+                display:none;
                 
             }
+            li:last-child {
+                display:inline-block;
+            }
+
         }
     }
 
