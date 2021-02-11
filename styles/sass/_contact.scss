@@ -101,8 +101,7 @@
     background-color: $yellow;
     color: $darkBlue;
     padding: 5px 15px;
-    border: 2px solid transparent;
-    transition: background-color 0.2s ease-in-out;
+    border: 2px solid transparent;    
     line-height: 2.16rem;    
 }
 .contact button:hover,
@@ -124,8 +123,7 @@
             height: 450px;
             margin: 0 auto;
         }
-        .info{
-            border: 1px solid pink;
+        .info{            
             display: flex; 
             flex-direction: column;
             flex-wrap: wrap;

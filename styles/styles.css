@@ -581,8 +581,6 @@ button {
   color: #fdd908;
   padding: 5px 15px;
   border: 2px solid transparent;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
   line-height: 2.16rem;
 }
 
@@ -900,8 +898,6 @@ button {
   color: #0D457F;
   padding: 5px 15px;
   border: 2px solid transparent;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
   line-height: 2.16rem;
 }
 
@@ -933,7 +929,6 @@ button {
     margin: 0 auto;
   }
   .contact .section1 .info {
-    border: 1px solid pink;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1007,7 +1002,7 @@ button {
 }
 
 .home header {
-  height: 80vh;
+  height: 69vh;
   background-image: url(../assets/home-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1019,25 +1014,23 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 1px solid red;
   margin: 0;
   position: relative;
 }
 
 .home .headerContent h1 {
-  width: 50%;
+  width: 45%;
   color: #fdd908;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-left: 5vw;
-  margin-top: 10%;
+  margin-top: 29%;
 }
 
 .home .headerContent .headerImage {
-  width: 50%;
+  width: 65%;
   position: absolute;
-  top: 150px;
+  top: 111px;
   right: -133px;
 }
 
@@ -1054,7 +1047,7 @@ button {
 .home .section1 .iconParent ul {
   width: 50%;
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
 }
 
 .home .section1 .iconParent ul li {
@@ -1083,7 +1076,7 @@ button {
 .home .section2 {
   background-color: #0D457F;
   margin: 5% 0 10% 0;
-  height: 90vh;
+  height: 85vh;
 }
 
 .home .section2 h3, .home .section2 p {
@@ -1097,7 +1090,7 @@ button {
 }
 
 .home .section2 button {
-  margin-bottom: 5%;
+  margin: 5% 0;
 }
 
 .home .section2 .wrapper {
@@ -1112,9 +1105,9 @@ button {
 
 .home .section2 .wrapper .locations {
   width: 40%;
+  height: 100%;
   text-align: right;
   position: relative;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1133,10 +1126,12 @@ button {
 .home .section2 .wrapper .locations img {
   -webkit-box-shadow: 20px 20px #fdd908;
           box-shadow: 20px 20px #fdd908;
+  margin-bottom: 0px;
 }
 
 .home .section2 .wrapper .programs {
   width: 40%;
+  height: 100%;
   text-align: left;
   position: relative;
   display: -webkit-box;
@@ -1148,7 +1143,7 @@ button {
 }
 
 .home .section2 .wrapper .programs .programsText {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .home .section2 .wrapper .programs .programsImage {
@@ -1161,6 +1156,7 @@ button {
 .home .section2 .wrapper .programs .programsImage img {
   -webkit-box-shadow: -20px 20px #fdd908;
           box-shadow: -20px 20px #fdd908;
+  margin-bottom: 0px;
 }
 
 .home .section3 {
@@ -1222,7 +1218,8 @@ button {
 }
 
 .home .section4 .wrapper .text h2 {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .home .section4 .wrapper .text p {
@@ -1230,13 +1227,13 @@ button {
 }
 
 .home .section4 .wrapper .text button {
-  width: 32%;
+  width: 220px;
 }
 
 .home .section5 {
-  height: 50vh;
+  height: auto;
   background-color: #0D457F;
-  padding: 5% 0;
+  padding: 50px 0;
 }
 
 .home .section5 .wrapper {
@@ -1350,11 +1347,15 @@ button {
 }
 
 @media (max-width: 1250px) {
-  .home .header {
-    height: 70vh;
+  .home header {
+    height: 60vh;
   }
-  .home .header .home .headerContent .headerImage {
-    width: 40%;
+  .home .headerContent h1 {
+    margin-top: 17%;
+    width: 50%;
+  }
+  .home .headerContent .headerImage {
+    width: 55%;
     top: 50px;
   }
   .home .section1 .iconParent .icon h2 {
@@ -1376,14 +1377,14 @@ button {
 
 @media (max-width: 1080px) {
   .home header {
-    height: 60vh;
+    height: 50vh;
   }
   .home .headerContent h1 {
-    width: 70%;
+    width: 65%;
     font-size: 7rem;
   }
   .home .headerContent .headerImage {
-    width: 35%;
+    width: 40%;
     top: 0px;
     right: -56px;
   }
@@ -1401,13 +1402,15 @@ button {
 
 @media (max-width: 800px) {
   .home header {
-    height: 40vh;
+    height: 35vh;
+    background-size: auto;
   }
   .home .headerContent h1 {
     width: 100%;
     margin: 0 auto;
     padding-top: 50px;
     text-align: center;
+    font-size: 6rem;
   }
   .home .headerContent .headerImage {
     display: none;
@@ -1436,9 +1439,15 @@ button {
             flex-direction: column;
     margin-top: 30px;
   }
+  .home .section1 .iconParent ul .icon h2 {
+    margin: 15px 0 0 10px;
+  }
   .home .section1 .iconParent ul li p {
     margin-top: 10%;
     margin-left: 0;
+  }
+  .home .section1 .iconParent .first li:first-child p {
+    margin-top: 70px;
   }
   .home .section2 {
     height: auto;
@@ -1470,6 +1479,9 @@ button {
         align-self: center;
     margin: 50px auto;
   }
+  .home .section3 h2 {
+    line-height: 7rem;
+  }
   .home .section4 .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1487,6 +1499,9 @@ button {
     width: 100%;
     text-align: center;
   }
+  .home .section4 .wrapper .text button {
+    margin: 0 auto;
+  }
   .home .section5 {
     height: auto;
     padding-bottom: 50px;
@@ -1494,11 +1509,17 @@ button {
 }
 
 @media (max-width: 500px) {
+  .home header {
+    height: 30vh;
+  }
   .home .headerContent h1 {
     padding-top: 90px;
   }
   .home .section1 {
     margin-top: 0;
+  }
+  .home .section1 .iconParent .first li:first-child p {
+    margin-top: 10%;
   }
   .home .section2 .wrapper {
     -webkit-box-align: center;
@@ -1509,10 +1530,8 @@ button {
   .home .section2 .wrapper .programs {
     width: 80%;
   }
-  .home .section5 {
-    padding-bottom: 0;
-  }
   .home .section5 .wrapper ul {
+    margin: 0 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1641,7 +1660,6 @@ img {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 button {
