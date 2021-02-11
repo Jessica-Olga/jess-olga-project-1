@@ -1530,6 +1530,9 @@ button {
   .home .section2 .wrapper .programs {
     width: 80%;
   }
+  .home .section2 .wrapper img {
+    display: none;
+  }
   .home .section5 .wrapper ul {
     margin: 0 auto;
     -webkit-box-orient: vertical;
